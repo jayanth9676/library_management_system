@@ -14,9 +14,9 @@ public class Book {
     @Column(nullable = false)
     private String isbn;
 
-//    @Column(nullable = false)
-    @ManyToOne
-    @JoinColumn(name = "authorId", nullable = false)
+    @Column(nullable = false)
+//    @ManyToOne
+//    @JoinColumn(name = "authorId", nullable = false)
     private Long authorId;
 
     // Getters and Setters
