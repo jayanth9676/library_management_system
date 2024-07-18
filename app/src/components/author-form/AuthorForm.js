@@ -22,7 +22,7 @@ const AuthorForm = () => {
         console.log(author);
         AuthorService.addAuthor(author).then(() => {
             setAuthor('');
-            navigate(-1);
+            navigate('/authors');
         }).catch((error) => {
             setError('Error adding author.');
         });

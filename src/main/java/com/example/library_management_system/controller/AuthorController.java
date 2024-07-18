@@ -13,7 +13,8 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://library-management-system-app.onrender.com/"})
 @RequestMapping("/api/v1")
 //@Tag(name = "Author Management", description = "Manage authors in the library")
 public class AuthorController {
